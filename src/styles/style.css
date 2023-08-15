@@ -186,6 +186,30 @@ nav a {
 }
 
 /* Contact Section */
+#contact {
+    height: 70vh;
+    margin: 100px 25px;
+}
+
+.contact-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.mailbox-wrapper {
+    float: right;
+    margin-left: 5px;
+}
+
+.contact-info li {
+    margin-left: 30px;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
 
 /* Misc Styles */
 .hidden {
