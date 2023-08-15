@@ -391,6 +391,30 @@ nav a {
     h1 {
         font-size: var(--large-h1);
     }
+
+    nav {
+        position: fixed;
+        top: 0;
+        bottom: unset;
+        background: var(--purple02);
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        color: var(--pink01);
+        font-size: var(--large-text);
+    }
+
+    .nav-icon {
+        display: none;
+    }
     
     .home-wrapper {
         gap: 3rem;
