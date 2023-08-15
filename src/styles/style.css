@@ -430,6 +430,10 @@ nav a {
         margin-right: -10px;
     }
 
+    .about-portrait {
+        max-width: 350px;
+    }
+
     .about-description {
         font-size: var(--large-text);
     }
