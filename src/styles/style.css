@@ -116,8 +116,73 @@ nav a {
 }
 
 /* Projects Section */
+#projects {
+    height: min-content;
+    margin: 100px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projects-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 1fr 0.7fr 0.3fr;
+    gap: 0.5rem;
+}
+
 .preview {
-    width: 35%;
+    grid-row: 1;
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    grid-row: 2;
+}
+
+.project-info > hr {
+    background-color: black;
+    border: 0;
+    height: 1px;
+    margin: 5px 0;
+}
+
+.project-name {
+    grid-row: 1;
+}
+
+.project-description {
+    margin: 10px 0;
+}
+
+.btns {
+    grid-row: 3;
+    display: flex;
+    gap: 1rem;
+}
+
+.live-demo,
+.github {
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    background: darkgray;
+    border-radius: 2px;
+    padding: 0 5px;
 }
 
 /* Contact Section */
