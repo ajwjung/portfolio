@@ -451,3 +451,20 @@ nav a {
         margin-left: 50px;
     }
 }
+
+@media screen and (min-width: 1400px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    #about,
+    #projects,
+    #contact {
+        margin: 100px 150px;
+    }
+
+    .mailbox {
+        scale: 0.8;
+        object-position: bottom 30px right 50%;
+    }
+}
