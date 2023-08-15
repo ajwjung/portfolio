@@ -11,7 +11,11 @@
     --alt-font: 'Josefin Sans', sans-serif;
     --heading-font: 'Silkscreen', cursive, sans-serif;
     --text-font: 'VT323', monospace;
-    --small-font: 1.1rem;
+    --small-text: 1.2rem;
+    --small-h1: 1.5rem;
+    --small-h2: 1.3rem;
+    --medium-text: 1.5rem;
+    --medium-heading: ;
 }
 
 * {
@@ -19,7 +23,7 @@
     margin: 0;
     padding: 0;
     font-family: var(--text-font);
-    font-size: var(--small-font);
+    font-size: var(--small-text);
     color: beige;
 }
 
@@ -27,7 +31,13 @@ body {
     background: var(--purple02);
 }
 
-h1, h2, h3 {
+h1 {
+    font-size: var(--small-h1);
+    font-family: var(--heading-font);
+}
+
+h2 {
+    font-size: var(--small-h2);
     font-family: var(--heading-font);
 }
 
@@ -47,6 +57,7 @@ nav ul {
 }
 
 nav a {
+    color: var(--purple02);
     text-decoration: none;
     padding: 0.5rem;
     display: flex;
@@ -77,11 +88,12 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .home-name {
     grid-row: 1;
+    font-size: 1.8rem;
 }
 
 .home-pixel {
@@ -91,13 +103,6 @@ nav a {
 .home-title {
     grid-row: 3;
     text-align: right;
-}
-
-.scroll-down {
-    grid-row: 2;
-    justify-self: center;
-    align-self: end;
-    filter: hue-rotate(250deg);
 }
 
 /* About Section */
@@ -150,13 +155,13 @@ nav a {
 
 .project-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 2rem;
 }
 
 .card {
     display: grid;
-    grid-template-rows: 1fr 0.7fr 0.3fr;
+    grid-template-rows: 0.8fr 0.8fr 0.2fr;
     padding: 15px;
     gap: 0.5rem;
     border: 3px double var(--pink02);
@@ -171,6 +176,12 @@ nav a {
 
 .project-info {
     grid-row: 2;
+    min-height: 220px;
+}
+
+.project-name {
+    font-family: var(--text-font);
+    font-size: 1.5rem;
 }
 
 .project-info > hr {
@@ -250,12 +261,20 @@ nav a {
     }
 
     .card {
-        grid-template-rows: 1fr 0.5fr 0.3fr;
+        grid-template-rows: 1fr 0.5fr 0.25fr;
         padding: 20px;
     }
 
     .preview {
         height: 225px;
+    }
+
+    .project-info {
+        min-height: 180px;
+    }
+
+    .project-name {
+        font-size: 1.6rem;
     }
 }
 
