@@ -84,7 +84,36 @@ nav a {
 }
 
 /* About Section */
+#about {
+    height: 70vh;
+    margin: 100px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+.about-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portrait-wrapper {
+    float: left;
+}
+
+.about-portrait,
+.about-name {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px dashed;
+    width: 80%;
+}
+
+.about-name {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
 
 /* Projects Section */
 .preview {
