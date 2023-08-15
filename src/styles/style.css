@@ -222,3 +222,67 @@ nav a {
 .hidden {
     display: none;
 }
+
+@media screen and (min-width: 500px) {
+    #home {
+        margin: 100px 70px;
+    }
+
+    #about,
+    #projects,
+    #contact {
+        margin: 100px 40px;
+    }
+
+    .card {
+        grid-template-rows: 1fr 0.5fr 0.3fr;
+        padding: 20px;
+    }
+
+    .preview {
+        height: 225px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #home {
+        margin: 80px 120px;
+        height: calc(100vh - 150px - 5vh - 1rem);
+    }
+
+    #about,
+    #projects,
+    #contact {
+        margin: 100px 70px;
+    }
+
+    .about-name {
+        margin-top: 5px;
+    }
+
+    .project-cards {
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+
+    .card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.2fr;
+        gap: 1.5rem;
+    }
+
+    .preview {
+        grid-row: 1 / span 2;
+        grid-column: 1;
+        height: 250px;
+    }
+
+    .project-info {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .btns {
+        grid-row: 2;
+        grid-column: 2;
+    }
+}
