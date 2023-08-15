@@ -8,6 +8,39 @@ body {
     background: gray
 }
 
+/* Nav Bar */
+nav {
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    background: gray;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon {
+    height: 25px;
+}
+
+.preview {
+    width: 35%;
+}
+
 .preview {
     width: 30%;
 }
