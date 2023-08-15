@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Silkscreen:wght@400;700&family=VT323&display=swap');
+
 :root {
 	--pink01: rgb(255, 204, 204);
 	--pink02: rgb(252, 176, 177);
@@ -6,16 +8,27 @@
 	--purple02: rgb(96, 99, 192);
     --purple-filter: invert(40%) sepia(10%) saturate(4495%) hue-rotate(203deg) brightness(93%) contrast(78%);
     --pink-filter: invert(85%) sepia(62%) saturate(4963%) hue-rotate(290deg) brightness(116%) contrast(102%);
+    --alt-font: 'Josefin Sans', sans-serif;
+    --heading-font: 'Silkscreen', cursive, sans-serif;
+    --text-font: 'VT323', monospace;
+    --small-font: 1.1rem;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: var(--text-font);
+    font-size: var(--small-font);
+    color: beige;
 }
 
 body {
     background: var(--purple02);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
 }
 
 /* Nav Bar */
@@ -77,6 +90,7 @@ nav a {
 
 .home-title {
     grid-row: 3;
+    text-align: right;
 }
 
 .scroll-down {
@@ -256,7 +270,7 @@ nav a {
     #contact {
         margin: 100px 70px;
     }
-    
+
     .project-cards {
         grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     }
