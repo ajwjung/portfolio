@@ -237,12 +237,29 @@ nav a {
     margin-left: 5px;
 }
 
-.contact-info li {
-    margin-left: 30px;
+.contact-wrapper {
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .contact-info a {
+    padding: 5px;
     text-decoration: none;
+    text-align: center;
+    background: var(--pink02);
+    color: var(--purple02);
+    border-radius: 2px;
 }
 
 /* Misc Styles */
@@ -404,6 +421,10 @@ nav a {
         align-items: end;
         gap: 1rem;
     }
+
+    .contact-info {
+        gap: 2rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -485,8 +506,8 @@ nav a {
         font-size: var(--large-text);
     }
 
-    .contact-info li {
-        margin-left: 50px;
+    .contact-wrapper {
+        gap: 2rem;
     }
 
     .mailbox {
@@ -509,6 +530,14 @@ nav a {
     .about-portrait,
     .about-name {
         max-width: 300px;
+    }
+
+    .contact-wrapper {
+        gap: 3rem;
+    }
+
+    .contact-info {
+        gap: 4rem;
     }
 
     .mailbox {
