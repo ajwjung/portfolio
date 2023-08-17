@@ -233,7 +233,7 @@ nav a {
 
 /* Contact Section */
 #contact {
-    height: 50vh;
+    height: 60vh;
     margin: 100px 25px;
 }
 
@@ -382,6 +382,10 @@ nav a {
         grid-column: 2;
     }
 
+    #contact {
+        height: 65vh;
+    }
+
     .mailbox {
         object-position: bottom 5px right 50%;
     }
@@ -435,6 +439,14 @@ nav a {
         display: flex;
         align-items: end;
         gap: 1rem;
+    }
+
+    #contact {
+        height: 80vh;
+    }
+
+    .contact-heading {
+        margin-bottom: 3rem;
     }
 
     .contact-info {
@@ -539,7 +551,7 @@ nav a {
     }
 
     .contact-heading {
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
 
     .mailbox {
@@ -582,7 +594,7 @@ nav a {
     }
 
     .contact-heading {
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
     }
 
     .contact-info {
