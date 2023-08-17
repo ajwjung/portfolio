@@ -265,6 +265,11 @@ nav a {
         margin: 100px 40px;
     }
 
+    .about-sign,
+    .projects-sign {
+        scale: 1.1;
+    }
+
     .card {
         grid-template-rows: 0.9fr 0.9fr 0.25fr;
         padding: 20px;
@@ -305,6 +310,11 @@ nav a {
     #projects,
     #contact {
         margin: 100px 70px;
+    }
+
+    .about-heading > h1,
+    .projects-heading > h1 {
+        transform: translateY(14px);
     }
 
     .about-portrait,
@@ -433,6 +443,16 @@ nav a {
 
     #about {
         height: 60vh;
+    }
+
+    .about-sign,
+    .projects-sign {
+        scale: 1.4;
+    }
+
+    .about-heading > h1,
+    .projects-heading > h1 {
+        transform: translateY(20px);
     }
 
     .portrait-wrapper {
