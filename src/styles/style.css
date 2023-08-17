@@ -53,6 +53,7 @@ nav {
     bottom: 0px;
     width: 100%;
     background: var(--pink01);
+    z-index: 10;
 }
 
 nav ul {
@@ -120,10 +121,21 @@ nav a {
     gap: 2rem;
 }
 
-.about-heading {
+.about-heading,
+.projects-heading,
+.contact-heading {
+    background-repeat: no-repeat;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.about-heading > h1,
+.projects-heading > h1 {
+    position: absolute;
+    z-index: 5;
+    transform: translateY(7px);
 }
 
 .portrait-wrapper {
@@ -151,12 +163,6 @@ nav a {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
-
-.projects-heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .project-cards {
@@ -231,9 +237,6 @@ nav a {
 }
 
 .contact-heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 2rem;
 }
 
