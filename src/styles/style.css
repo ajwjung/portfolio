@@ -65,17 +65,10 @@ nav ul {
 
 nav a {
     color: var(--purple02);
+    line-height: 7vh;
     text-decoration: none;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-icon {
-    height: 25px;
-    filter: var(--purple-filter);
+    text-transform: uppercase;
+    padding: 10px;
 }
 
 /* Home Section */
@@ -413,10 +406,6 @@ nav a {
     nav a {
         color: var(--pink01);
         font-size: var(--large-text);
-    }
-
-    .nav-icon {
-        display: none;
     }
     
     .home-wrapper {
