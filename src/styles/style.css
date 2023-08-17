@@ -475,8 +475,13 @@ nav a {
         margin: 100px;
     }
 
+    #about,
+    #projects {
+        gap: 4rem;
+    }
+
     #about {
-        height: 60vh;
+        height: 70vh;
     }
 
     .about-sign,
@@ -525,6 +530,10 @@ nav a {
         gap: 2rem;
     }
 
+    .contact-heading {
+        margin-bottom: 3rem;
+    }
+
     .mailbox {
         scale: 0.9;
         object-position: bottom 15px right 50%;
@@ -542,13 +551,26 @@ nav a {
         margin: 100px 150px;
     }
 
+    #about,
+    #projects {
+        gap: 5rem;
+    }
+
+    #about {
+        height: 80vh;
+    }
+
     .about-portrait,
     .about-name {
-        max-width: 300px;
+        margin-right: 50px;
     }
 
     .contact-wrapper {
         gap: 3rem;
+    }
+
+    .contact-heading {
+        margin-bottom: 4rem;
     }
 
     .contact-info {
