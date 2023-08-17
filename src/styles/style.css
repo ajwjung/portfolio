@@ -133,20 +133,19 @@ nav a {
 
 .portrait-wrapper {
     float: left;
+    transform: translateY(5px);
 }
 
 .about-portrait,
 .about-name {
     background: rgba(255, 255, 255, 0.15);
     border: 2px dashed var(--pink02);
-    width: 80%;
+    margin-right: 20px;
 }
 
 .about-name {
     text-align: center;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 /* Projects Section */
@@ -266,10 +265,6 @@ nav a {
         margin: 100px 40px;
     }
 
-    .about-name {
-        padding: 0;
-    }
-
     .card {
         grid-template-rows: 0.9fr 0.9fr 0.25fr;
         padding: 20px;
@@ -310,6 +305,15 @@ nav a {
     #projects,
     #contact {
         margin: 100px 70px;
+    }
+
+    .about-portrait,
+    .about-name {
+        max-width: 165px;
+    }
+
+    .about-name {
+        margin-top: 5px;
     }
 
     .project-cards {
@@ -354,6 +358,11 @@ nav a {
     
     .portrait-wrapper {
         margin-right: -10px;
+    }
+
+    .about-portrait,
+    .about-name {
+        margin-right: 40px;
     }
 
     .project-cards {
@@ -430,8 +439,13 @@ nav a {
         margin-right: -10px;
     }
 
-    .about-portrait {
-        max-width: 350px;
+    .about-portrait,
+    .about-name {
+        max-width: 250px;
+    }
+
+    .about-name {
+        padding: 5px;
     }
 
     .about-description {
@@ -470,6 +484,11 @@ nav a {
     #projects,
     #contact {
         margin: 100px 150px;
+    }
+
+    .about-portrait,
+    .about-name {
+        max-width: 300px;
     }
 
     .mailbox {
