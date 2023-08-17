@@ -337,6 +337,10 @@ nav a {
         grid-row: 2;
         grid-column: 2;
     }
+
+    .mailbox {
+        object-position: bottom 5px right 50%;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -418,6 +422,10 @@ nav a {
         margin: 100px;
     }
 
+    #about {
+        height: 60vh;
+    }
+
     .portrait-wrapper {
         margin-right: -10px;
     }
@@ -446,6 +454,11 @@ nav a {
     .contact-info li {
         margin-left: 50px;
     }
+
+    .mailbox {
+        scale: 0.9;
+        object-position: bottom 15px right 50%;
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -461,6 +474,7 @@ nav a {
 
     .mailbox {
         scale: 0.8;
-        object-position: bottom 30px right 50%;
+        object-position: bottom 25px right 50%;
+        transform: translateY(-50px);
     }
 }
