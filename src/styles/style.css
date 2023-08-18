@@ -108,7 +108,7 @@ nav button {
 
 /* About Section */
 #about {
-    height: 50vh;
+    min-height: 50vh;
     margin: 100px 25px;
     display: flex;
     flex-direction: column;
@@ -154,6 +154,10 @@ nav button {
 .about-name {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.highlight {
+    color: var(--bg02);
 }
 
 /* Projects Section */
