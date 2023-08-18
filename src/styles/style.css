@@ -66,12 +66,10 @@ nav ul {
     align-items: center;
 }
 
-nav a {
-    color: var(--bg01);
-    line-height: 7vh;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px;
+nav button {
+    height: 50px;
+    background: none;
+    border: none;
 }
 
 /* Home Section */
@@ -320,6 +318,11 @@ nav a {
         font-size: var(--medium-h1);
     }
 
+    nav button {
+        height: 65px;
+        font-size: var(--large-text);
+    }
+
     #home {
         margin: 80px 120px;
         height: calc(100vh - 150px - 5vh - 1rem);
@@ -471,13 +474,15 @@ nav a {
         display: flex;
         justify-content: end;
         align-items: center;
-        padding-right: 10px;
         gap: 1rem;
     }
+    
+    nav li:last-child {
+        margin-right: 20px;
+    }
 
-    nav a {
-        color: var(--bg01);
-        font-size: var(--large-text);
+    nav button {
+        padding: 0 10px;
     }
 
     #home {
