@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=VT323&family=Share+Tech+Mono&display=swap');
 
 :root {
-    --bg01: rgb(240, 228, 189);
-    --bg02: rgb(215, 127, 117);
-    --bg03: rgb(159, 75, 81);
-    --bg04: rgb(69, 25, 58);
-    --transparent-bg: rgba(255, 255, 255, 0.1);
-    --img-filter: contrast(130%) brightness(130%) hue-rotate(310deg);
+    --bg01: rgb(248, 239, 186);
+    --bg02: rgb(187, 200, 126);
+    --bg03: rgb(96, 130, 79);
+    --bg04: rgb(35, 68, 62);
+    --highlight: rgb(216, 218, 141);
+    --transparent-bg: rgba(255, 255, 255, 0.3);
+    --transparent-card: rgba(147, 153, 61, 0.2);
+    --img-filter: brightness(170%) hue-rotate(65deg) sepia(30%);
     --heading-font: 'Silkscreen', cursive, sans-serif;
     --text-font: 'VT323', monospace;
     --small-text: 1.2rem;
@@ -28,26 +30,27 @@
     padding: 0;
     font-family: var(--text-font);
     font-size: var(--small-text);
-    color: var(--bg01);
+    color: var(--bg04);
 }
 
 body {
-    background: var(--bg04);
+    background: var(--bg01);
 }
 
 h1,
 h2 {
     font-weight: 500;
     text-transform: uppercase;
-    color: var(--bg02);
 }
 
 h1 {
     font-size: var(--small-h1);
+    color: var(--bg04);
 }
 
 h2 {
     font-size: var(--small-h2);
+    color: var(--bg03);
 }
 
 /* Nav Bar */
@@ -55,7 +58,7 @@ nav {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    background: var(--bg03);
+    background: var(--bg02);
     z-index: 10;
 }
 
@@ -158,7 +161,7 @@ nav button {
 }
 
 .highlight {
-    color: var(--bg02);
+    background: var(--highlight);
 }
 
 /* Projects Section */
@@ -177,6 +180,7 @@ nav button {
 }
 
 .card {
+    background: var(--transparent-card);
     display: grid;
     grid-template-rows: 0.8fr 0.8fr 0.2fr;
     padding: 15px;
@@ -202,7 +206,7 @@ nav button {
 }
 
 .project-info > hr {
-    background-color: var(--bg02);
+    background-color: var(--bg03);
     border: 0;
     height: 1px;
     margin: 5px 0;
@@ -229,8 +233,8 @@ nav button {
     line-height: 30px;
     text-decoration: none;
     text-align: center;
-    background: var(--bg02);
-    color: var(--bg04);
+    background: var(--bg03);
+    color: var(--bg01);
     border-radius: 2px;
     padding: 0 5px;
 }
@@ -472,7 +476,7 @@ nav button {
         position: fixed;
         top: 0;
         bottom: unset;
-        background: var(--bg03);
+        background: var(--bg02);
     }
 
     nav ul {
