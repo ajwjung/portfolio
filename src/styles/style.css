@@ -239,6 +239,13 @@ nav button {
     padding: 0 5px;
 }
 
+.live-demo:hover,
+.github:hover,
+.contact-info a:hover {
+    background: var(--bg04);
+    color: var(--bg01);
+}
+
 /* Contact Section */
 #contact {
     height: 60vh;
@@ -274,8 +281,8 @@ nav button {
     padding: 5px;
     text-decoration: none;
     text-align: center;
-    background: var(--bg02);
-    color: var(--bg04);
+    background: var(--bg03);
+    color: var(--bg01);
     border-radius: 2px;
 }
 
