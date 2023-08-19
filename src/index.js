@@ -21,13 +21,6 @@ const Page = (() => {
         });
     });
 
-    contactTab.addEventListener("click", () => {
-        contact.scrollIntoView({
-            block: "start",
-            inline: "start"
-        });
-    });
-
     if (document.documentElement.clientWidth < 1024) {
         aboutTab.addEventListener("click", () => {
             scrollToWithOffset(-10, about);
@@ -36,13 +29,24 @@ const Page = (() => {
         projectsTab.addEventListener("click", () => {
             scrollToWithOffset(-10, projects);
         });
+
+        contactTab.addEventListener("click", () => {
+            contact.scrollIntoView({
+                block: "start",
+                inline: "start"
+            });
+        });
     } else {
         aboutTab.addEventListener("click", () => {
-            scrollToWithOffset(-50, about);
+            scrollToWithOffset(-90, about);
         });
     
         projectsTab.addEventListener("click", () => {
-            scrollToWithOffset(-50, projects);
+            scrollToWithOffset(-90, projects);
+        });
+
+        contactTab.addEventListener("click", () => {
+            scrollToWithOffset(-90, contact);
         });
     }
     
