@@ -98,6 +98,7 @@ nav button {
 
 .home-pixel {
     grid-row: 2;
+    object-position: right 20px top 50%;
 }
 
 .home-title {

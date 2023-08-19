@@ -20,7 +20,11 @@
         <section id="home">
             <div class="home-wrapper">
                 <h1 class="home-name">Amy Jung</h1>
-                <img class="home-pixel" src="imgs/home-portrait.png" alt="Pixel building" />
+                <picture class="home-pixel">
+                    <source media="(min-width: 700px)" srcset="imgs/isometric-room-2x.png">
+                    <source media="(min-width: 1000px)" srcset="imgs/isometric-room-3x.png">
+                    <img src="imgs/isometric-room-1x.png" alt="">
+                </picture>
                 <h2 class="home-title">Front-End Developer</h2>
             </div>
         </section>
@@ -46,7 +50,10 @@
                 </div>
                 <p class="about-description">Hello! I'm Amy, an accounting assistant and an <span class="highlight">aspiring front-end developer</span>. I began my web development journey because I wanted to learn how to code my own custom profiles, and now I want to use my skills and creative mind to <span class="highlight">turn your vision into reality</span>. 
                     
-                <br><br>My favorite part about my web development is the creative freedom and challenges it provides, and the satisfaction of seeing the many errors and broken features evolve into a working web application. On my free time, I like to watch Asian TV shows and dramas, make pixel art, or play video games.</p>
+                <br><br>My favorite part about my web development is the creative freedom and challenges it provides, and the satisfaction of seeing the many errors and broken features evolve into a working web application. On my free time, I like to watch Asian TV shows and dramas, make pixel art, or play video games.
+            
+                <!-- add a call to action here (e.g., keep scrolling to view my projects or find me on my socials) -->
+            </p>
             </div>
         </section>
         <section id="projects">
