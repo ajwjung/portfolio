@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-* Live Demo
+- Live Demo
 
 ## Objective
 
@@ -12,10 +12,10 @@ There are no real requirements for this project besides needing to make the webs
 
 ## Built With
 
-* HTML5
-* CSS3
-* Vanilla JS
-* Webpack
+- HTML5
+- CSS3
+- Vanilla JS
+- Webpack
 
 ## Author's Notes
 
