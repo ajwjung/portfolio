@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=VT323&family=Share+Tech+Mono&display=swap');
 
 :root {
-    --bg01: rgb(248, 239, 186);
-    --bg02: rgb(187, 200, 126);
-    --bg03: rgb(96, 130, 79);
-    --bg04: rgb(35, 68, 62);
-    --highlight: rgb(216, 218, 141);
+    /* version 1 blues */
+    --bg01: rgb(223, 239, 245);
+    --bg02: rgb(172, 214, 246);
+    --bg03: rgb(82, 165, 222);
+    --bg04: rgb(54, 85, 133);
+    --bg05: rgb(24, 40, 74);
+    --highlight: rgb(255, 229, 183);
     --transparent-bg: rgba(255, 255, 255, 0.3);
-    --transparent-card: rgba(147, 153, 61, 0.2);
-    --img-filter: brightness(170%) hue-rotate(65deg) sepia(30%);
+    --transparent-card: rgba(108, 162, 233, 0.15);
+    --img-filter: contrast(90%) brightness(120%) hue-rotate(200deg);
     --heading-font: 'Silkscreen', cursive, sans-serif;
     --text-font: 'VT323', monospace;
     --small-text: 1.2rem;
@@ -45,12 +47,12 @@ h2 {
 
 h1 {
     font-size: var(--small-h1);
-    color: var(--bg04);
+    color: var(--bg05);
 }
 
 h2 {
     font-size: var(--small-h2);
-    color: var(--bg03);
+    color: var(--bg04);
 }
 
 /* Nav Bar */
@@ -58,7 +60,7 @@ nav {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    background: var(--bg02);
+    background: var(--bg04);
     z-index: 10;
 }
 
@@ -74,6 +76,7 @@ nav button {
     background: none;
     border: none;
     cursor: pointer;
+    color: var(--bg01);
 }
 
 /* Home Section */
@@ -152,7 +155,7 @@ nav button {
 .about-portrait,
 .about-name {
     background: var(--transparent-bg);
-    border: 2px dashed var(--bg03);
+    border: 2px dashed var(--bg04);
     margin-right: 20px;
 }
 
@@ -186,7 +189,9 @@ nav button {
     grid-template-rows: 0.8fr 0.8fr 0.2fr;
     padding: 15px;
     gap: 0.5rem;
-    border: 3px double var(--bg03);
+    border: 2px solid var(--bg04);
+    border-radius: 2px;
+    box-shadow: 7px 7px 1px 1px var(--bg04);
 }
 
 .preview {
@@ -194,6 +199,8 @@ nav button {
     height: 160px;
     width: 100%;
     object-fit: cover;
+    border: 2px solid var(--bg04);
+    border-radius: 2px;
 }
 
 .project-info {
@@ -207,7 +214,7 @@ nav button {
 }
 
 .project-info > hr {
-    background-color: var(--bg03);
+    background-color: var(--bg04);
     border: 0;
     height: 1px;
     margin: 5px 0;
@@ -234,7 +241,7 @@ nav button {
     line-height: 30px;
     text-decoration: none;
     text-align: center;
-    background: var(--bg03);
+    background: var(--bg04);
     color: var(--bg01);
     border-radius: 2px;
     padding: 0 5px;
@@ -243,8 +250,9 @@ nav button {
 .live-demo:hover,
 .github:hover,
 .contact-info a:hover {
-    background: var(--bg04);
+    background: var(--bg05);
     color: var(--bg01);
+    scale: 0.9;
 }
 
 /* Contact Section */
@@ -282,7 +290,7 @@ nav button {
     padding: 5px;
     text-decoration: none;
     text-align: center;
-    background: var(--bg03);
+    background: var(--bg04);
     color: var(--bg01);
     border-radius: 2px;
 }
@@ -484,7 +492,7 @@ nav button {
         position: fixed;
         top: 0;
         bottom: unset;
-        background: var(--bg02);
+        background: var(--bg04);
     }
 
     nav ul {
@@ -530,7 +538,7 @@ nav button {
     }
 
     #about {
-        height: 70vh;
+        min-height: 70vh;
     }
 
     .about-sign,
@@ -606,7 +614,7 @@ nav button {
     }
 
     #about {
-        height: 80vh;
+        min-height: 80vh;
     }
 
     .about-portrait,
