@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-- Live Demo
+- [Live Demo](https://ajwjung.github.io/portfolio/)
 
 ## Objective
 
